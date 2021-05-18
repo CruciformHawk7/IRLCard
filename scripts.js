@@ -33,7 +33,6 @@ let gyroHandler = () => {
         initX = null;
 
     gyro.addEventListener('reading', () => {
-
         if (initY == null) initY = gyro.quaternion[0];
         if (initX == null) initX = gyro.quaternion[1];
 
