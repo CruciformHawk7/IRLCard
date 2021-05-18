@@ -1,0 +1,83 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+.main-card {
+    position: relative;
+    perspective: 800px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.containers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    width: 90vw;
+    height: 30vh;
+}
+
+.background-main {
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, #9cecfb, #333399);
+    transform-style: preserve-3d;
+}
+
+.inner {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.inner>div {
+    position: absolute;
+}
+
+.circle {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 90%;
+    left: 90%;
+}
+
+.text {
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    top: 5%;
+    left: 5%;
+    color: #fff;
+}
+
+.main-content {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+    .containers {
+        width: 70vw;
+        height: 90vh;
+    }
+    .text {
+        font-size: 32px;
+    }
+    .background-main {
+        border-radius: 45px;
+    }
+    .circle {
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
